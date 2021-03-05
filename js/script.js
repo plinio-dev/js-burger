@@ -5,6 +5,7 @@ var burgerName = document.getElementById('burger-input');
 var ingredients = document.getElementsByClassName('add-ingrendent');
 var cheese = document.getElementById('cheese');
 var sum = 50;
+var coupons = ["123asds", "qwe567", "tommy10"]
 // aggiungo l'evento click
 calculate.addEventListener('click',
   function () {
@@ -14,21 +15,22 @@ calculate.addEventListener('click',
     if ( burgerName.value != "" ) {
       var sum = 50;
 
-
+      // 4 --- ciclo gli ingriedenti
       for (var i = 0; i < ingredients.length; i++) {
+        // 5 --- se l'ingrediente è stato selezionato prendere il suo valore e sommarlo al costo del panino
         if (ingredients[i].checked){
           sum += parseInt(ingredients[i].value);
         }
       }
-
-      console.log(sum);
+      // 6 --- applico sconto
+      var coupon = document.getElementById("coupon-input");
+      if (coupons.includes(coupon.value) ) {
+        sum -= sum * 0.2;
+      }
+      // 7 --- stampo il totale
+      document.getElementById("total").innerHTML = sum.toFixed(2);
     } else {
       alert("Inserisci il nome del tuo burger");
     }
   }
 );
-
-// 4 --- ciclo gli ingriedenti
-// 5 --- se l'ingrediente è stato selezionato prendere il suo valore e sommarlo al costo del panino
-// 6 --- applico sconto
-// 7 --- stampo il totale
