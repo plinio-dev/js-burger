@@ -11,8 +11,60 @@
     <header>
       <h1>Create your burger</h1>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <div class="burger-name">
+        <input id="burger-input" type="text" placeholder="Name Your Burger" value="">
+      </div>
+      <div class="ingriedents">
+        <h2>Ingriedents</h2>
+        <ul class="ingriedents-list">
+          <li>
+            <label for="Cheese">cheese
+              <input id="Cheese" type="checkbox" name="" value="">add
+            </label>
+          </li>
+          <li>
+            <label for="Egg">cheese
+              <input id="Egg" type="checkbox" name="" value="">add
+            </label>
+          </li>
+          <li>
+            <label for="Mustard">cheese
+              <input id="Mustard" type="checkbox" name="" value="">add
+            </label>
+          </li>
+          <li>
+            <label for="Tomato">cheese
+              <input id="Tomato" type="checkbox" name="" value="">add
+            </label>
+          </li>
+          <li>
+            <label for="Lattuce">cheese
+              <input id="Lattuce" type="checkbox" name="" value="">add
+            </label>
+          </li>
+          <li>
+            <label for="Ketchup">cheese
+              <input id="Ketchup" type="checkbox" name="" value="">add
+            </label>
+          </li>
+        </ul>
+      </div>
+      <div class="discount">
+        <label for="coupon-input">Discount Coupon
+          <input id="coupon-input" type="text" placeholder="Coupon" value="">
+        </label>
+      </div>
+      <div class="button calculate">
+        <button id="calculate">calculate</button>
+      </div>
+    </main>
+    <footer>
+      <div class="price-name">
+        <h3>Your Price</h3>
+      </div>
+      <div id="total">50</div>
+    </footer>
   </div>
 
   <script src="js/script.js" charset="utf-8"></script>
