@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <title>Burger</title>
 </head>
 <body>
   <div class="page-container">
     <header>
       <h1>Create your burger</h1>
+      <div class="burger-img">
+        <img src="img/burger-top.png" alt="">
+      </div>
     </header>
     <main>
       <div class="burger-name">
@@ -17,45 +24,61 @@
       </div>
       <div class="ingriedents">
         <h2>Ingriedents</h2>
-        <ul class="ingriedents-list">
-          <li>
-            <label for="cheese"> Cheese
-              <input id="cheese" class="add-ingrendent" type="checkbox" name="" value="2">add
-            </label>
-          </li>
-          <li>
-            <label for="egg"> Egg
-              <input id="egg" class="add-ingrendent" type="checkbox" name="" value="3">add
-            </label>
-          </li>
-          <li>
-            <label for="mustard"> Mustard
-              <input id="mustard" class="add-ingrendent" type="checkbox" name="5" value="3">add
-            </label>
-          </li>
-          <li>
-            <label for="tomato"> Tomato
-              <input id="tomato" class="add-ingrendent" type="checkbox" name="" value="4">add
-            </label>
-          </li>
-          <li>
-            <label for="lattuce"> Lattuce
-              <input id="lattuce" class="add-ingrendent" type="checkbox" name="" value="2">add
-            </label>
-          </li>
-          <li>
-            <label for="ketchup"> Ketchup
-              <input id="ketchup" class="add-ingrendent" type="checkbox" name="" value="5">add
-            </label>
-          </li>
-        </ul>
+        <div class="ingr-wrap">
+          <ul class="ingriedents-list">
+            <li>
+              <img src="img/cheese.svg" alt="cheese">
+              <label for="cheese ">
+                <p>Cheese</p>
+                <input id="cheese" class="add-ingrendent" type="checkbox" name="" value="2">
+                <p class="red">add</p>
+              </label>
+            </li>
+            <li>
+              <img src="img/fried-egg.svg" alt="egg">
+              <label for="egg">
+                <p>Egg</p>
+                <input id="egg" class="add-ingrendent" type="checkbox" name="" value="3"><p class="red">add</p>
+              </label>
+            </li>
+            <li>
+              <img src="img/mustard.svg" alt="mustard">
+              <label for="mustard">
+                <p>Mustard</p>
+                <input id="mustard" class="add-ingrendent" type="checkbox" name="5" value="3"><p class="red">add</p>
+              </label>
+            </li>
+          </ul>
+          <ul class="ingriedents-list">
+            <li>
+                <img src="img/tomato.svg" alt="tomato">
+                <label for="tomato">
+                  <p>Tomato</p>
+                  <input id="tomato" class="add-ingrendent" type="checkbox" name="" value="4"><p class="red">add</p>
+                </label>
+              </li>
+            <li>
+                <img src="img/lettuce.svg" alt="lattuce">
+                <label for="lattuce">
+                  <p>Lattuce</p>
+                  <input id="lattuce" class="add-ingrendent" type="checkbox" name="" value="2"><p class="red">add</p>
+                </label>
+              </li>
+            <li>
+                <img src="img/ketchup.svg" alt="ketchup">
+                <label for="ketchup"><p>Ketchup</p>
+                  <input id="ketchup" class="add-ingrendent" type="checkbox" name="" value="5"><p class="red">add</p>
+                </label>
+              </li>
+          </ul>
+        </div>
       </div>
       <div class="discount">
         <label for="coupon-input">Discount Coupon
           <input id="coupon-input" type="text" placeholder="Coupon" value="">
         </label>
       </div>
-      <div class="button calculate">
+      <div class="button-calculate">
         <button id="calculate">calculate</button>
       </div>
     </main>

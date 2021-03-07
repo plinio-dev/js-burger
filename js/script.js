@@ -9,8 +9,6 @@ var coupons = ["123asds", "qwe567", "tommy10"]
 // aggiungo l'evento click
 calculate.addEventListener('click',
   function () {
-
-
     // controllo se il nome è stato inserito
     if ( burgerName.value != "" ) {
       var sum = 50;
@@ -28,7 +26,7 @@ calculate.addEventListener('click',
         sum -= sum * 0.2;
       }
       // 7 --- stampo il totale
-      document.getElementById("total").innerHTML = sum.toFixed(2);
+      document.getElementById("total").innerHTML = sum.toFixed(2)+ "€";
     } else {
       alert("Inserisci il nome del tuo burger");
     }

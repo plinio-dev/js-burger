@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* typo */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  padding-bottom: 16px;
+}
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffff;
+}
+p {
+  display: inline;
+}
+.red {
+  color: red;
+}
+
+/* /typo */
+
+/* helpers */
+input:focus, button:focus {
+  outline: none;
+}
+#burger-input::placeholder {
+  color: black;
+}
+/* helpers */
+
+.page-container {
+  background-color: #fff5e2;
+}
+header, main, footer {
+  width: 50%;
+}
+
+/* header */
+header {
+  position: relative;
+  background-color: #fdbb40;
+  padding: 40px 0px 30px 30px;;
+}
+
+.burger-img {
+  position: absolute;
+  right: -50px;;
+  top: -25px;
+}
+/* /header */
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 40px 0px 30px 30px;
+}
+#burger-input {
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 30px;
+}
+.ingriedents-list {
+  display: inline-block;
+  list-style: none;
+  padding-bottom: 30px;
+}
+.ingr-wrap {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.ingriedents-list li {
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+}
+.ingriedents-list li label {
+  display: flex;
+  align-items: center;
+}
+.ingriedents-list li img {
+  margin-right: 15px;
+  width: 15%;
+}
+.ingriedents-list li input  {
+  margin-right: 15px;
+}
+.ingriedents-list li p {
+  font-size: 16px;
+  margin-right: 10px;
+}
+#coupon-input {
+  background-color: #fff5e2;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 8px;
+  width: 60%;
+  margin-left: 10px;
+}
+.button-calculate {
+  padding: 30px;
+  text-align: center;
+}
+#calculate {
+  background-color: #fdbb40;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 2px 7px 18px #b1adad5e;
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: width 1s, height 1s, transform 1s;
+}
+li label:hover, li img:hover {
+  transform: scale(1.1);
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+}
+
+/* / main */
+
+/* footer */
+footer {
+  background-color: #d33359;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+#total {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffff;
+}
+
+
+/* /footer */
